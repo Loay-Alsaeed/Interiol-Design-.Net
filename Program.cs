@@ -70,13 +70,7 @@ namespace Backend_.Net
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy.WithOrigins("http://localhost:5174")
-                          .AllowAnyHeader()
-                          .AllowAnyMethod();
-                });
-                options.AddPolicy("AllowFrontend", policy =>
-                {
-                    policy.WithOrigins("http://localhost:5173")
+                    policy.WithOrigins("https://interial-design-frontend-react.vercel.app/")
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });
